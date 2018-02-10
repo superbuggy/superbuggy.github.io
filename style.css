@@ -6,11 +6,6 @@ body {
   font-family: 'Abel';
 }
 
-main {
-  width: 70%;
-  margin: 0 auto;
-}
-
 h1 {
   max-width: 9em;
   margin: 0;
@@ -32,6 +27,32 @@ h1 {
   letter-spacing: .25em;
   color: rgb(255, 216, 58);
   overflow: hidden;
+}
+
+@keyframes expand-shadow {
+  0% {
+    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
+                 .2vh .2vh 0px rgb(199, 173, 69),
+                 .3vh .3vh 0px rgb(179, 153, 54),
+                 .4vh .4vh 0px rgb(104, 81, 41),
+                  0vh  0vh 1vh rgb(24, 50, 63),
+                  0vh  0vh 2vh rgb(24, 58, 75),
+                  0vh  0vh 3vh rgba(243, 218, 119, 0.3);
+  }
+  50% {
+    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
+                 .3vh .3vh 0px rgb(199, 173, 69),
+                 .5vh .5vh 0px rgb(179, 153, 54),
+                 .7vh .7vh 0px rgb(104, 81, 41),
+                  0vh  0vh 3vh rgb(24, 50, 63),
+                  0vh  0vh 4vh rgb(24, 58, 75),
+                  0vh  0vh 6vh rgba(243, 218, 119, 0.3);
+  }
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .moon {
@@ -62,27 +83,5 @@ h1 {
   50% {
     text-shadow: .4vh  .4vh 4vh rgba(243, 218, 119, .6),
                 -.4vh -.4vh 4vh rgba(243, 218, 119, .6);
-  }
-}
-
-
-@keyframes expand-shadow {
-  0% {
-    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
-                 .2vh .2vh 0px rgb(199, 173, 69),
-                 .3vh .3vh 0px rgb(179, 153, 54),
-                 .4vh .4vh 0px rgb(104, 81, 41),
-                  0vh  0vh 1vh rgb(24, 50, 63),
-                  0vh  0vh 2vh rgb(24, 58, 75),
-                  0vh  0vh 3vh rgba(243, 218, 119, 0.3);
-  }
-  50% {
-    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
-                 .3vh .3vh 0px rgb(199, 173, 69),
-                 .5vh .5vh 0px rgb(179, 153, 54),
-                 .7vh .7vh 0px rgb(104, 81, 41),
-                  0vh  0vh 3vh rgb(24, 50, 63),
-                  0vh  0vh 4vh rgb(24, 58, 75),
-                  0vh  0vh 6vh rgba(243, 218, 119, 0.3);
   }
 }
