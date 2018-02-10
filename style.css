@@ -7,8 +7,8 @@ body {
 }
 
 h1 {
-  max-width: 70%;
-  margin: 0 auto;
+  max-width: 9em;
+  margin: 0;
   animation: expand-shadow 8s linear infinite alternate-reverse;
   font-family: 'Rajdhani';
   text-align: center;
@@ -16,13 +16,13 @@ h1 {
   font-size: 10vh;
   color: rgb(255, 230, 130);
   -webkit-font-smoothing: antialiased;
-  z-index: 2000000;
+  z-index: -2000000;
   transition: z-index 4s;
 }
 
 .description {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 9em;
   font-size: 4vh;
   letter-spacing: .25em;
   color: rgb(255, 216, 58);
@@ -50,6 +50,11 @@ h1 {
   }
 }
 
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .moon {
   font-size: 128px;
   letter-spacing: .25em;
@@ -58,9 +63,6 @@ h1 {
 }
 
 .forest {
-  /* left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%); */
   margin: 0 auto;
   font-size: 96px;
   text-align: center;
@@ -78,7 +80,7 @@ h1 {
     text-shadow: .1vh  .1vh 1vh rgba(243, 218, 119, .6),
                 -.1vh -.1vh 1vh rgba(243, 218, 119, .6);
   }
-  99% {
+  50% {
     text-shadow: .4vh  .4vh 4vh rgba(243, 218, 119, .6),
                 -.4vh -.4vh 4vh rgba(243, 218, 119, .6);
   }
