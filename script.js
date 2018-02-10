@@ -1,5 +1,4 @@
 let forestDivs = [...document.querySelectorAll('.forest')]
-console.log(forestDivs)
 
 forestDivs.forEach((forestDiv, i) => {
   const alpha = .6 / forestDivs.length * i
@@ -9,5 +8,4 @@ forestDivs.forEach((forestDiv, i) => {
   forestDiv.style.color = `rgba(0, 0, 0, ${alpha})`
   forestDiv.style.top = `${rowHeight}px`
   forestDiv.style.zIndex = -i
-  console.log(heighty, rowHeight)
 })
