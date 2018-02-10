@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Abel|Kanit|Libre+Franklin|Philosopher|Rajdhani');
+
+body {
+  background: rgb(0, 15, 25);
+  font-family: 'Abel';
+}
+
+h1 {
+  max-width: 70%;
+  margin: 0 auto;
+  animation: expand-shadow 8s linear infinite alternate-reverse;
+  font-family: 'Rajdhani';
+  text-align: center;
+  letter-spacing: .5vh;
+  font-size: 10vh;
+  color: rgb(255, 230, 130);
+  -webkit-font-smoothing: antialiased;
+  z-index: 2000000;
+  transition: z-index 4s;
+}
+
+.description {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 4vh;
+  letter-spacing: .25em;
+  color: rgb(255, 216, 58);
+  overflow: hidden;
+}
+
+@keyframes expand-shadow {
+  0% {
+    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
+                 .2vh .2vh 0px rgb(199, 173, 69),
+                 .3vh .3vh 0px rgb(179, 153, 54),
+                 .4vh .4vh 0px rgb(104, 81, 41),
+                  0vh  0vh 1vh rgb(24, 50, 63),
+                  0vh  0vh 2vh rgb(24, 58, 75),
+                  0vh  0vh 3vh rgba(243, 218, 119, 0.3);
+  }
+  50% {
+    text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
+                 .3vh .3vh 0px rgb(199, 173, 69),
+                 .5vh .5vh 0px rgb(179, 153, 54),
+                 .7vh .7vh 0px rgb(104, 81, 41),
+                  0vh  0vh 3vh rgb(24, 50, 63),
+                  0vh  0vh 4vh rgb(24, 58, 75),
+                  0vh  0vh 6vh rgba(243, 218, 119, 0.3);
+  }
+}
+
+.moon {
+  font-size: 128px;
+  letter-spacing: .25em;
+  color: rgb(255, 216, 58);
+  animation: moon-glow 4s linear infinite alternate-reverse;
+}
+
+.forest {
+  /* left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); */
+  margin: 0 auto;
+  font-size: 96px;
+  text-align: center;
+  position: absolute;
+}
+
+.trees {
+  width: 60%;
+  max-height: 100em;
+  margin: 0 auto;
+}
+
+@keyframes moon-glow {
+  0% {
+    text-shadow: .1vh  .1vh 1vh rgba(243, 218, 119, .6),
+                -.1vh -.1vh 1vh rgba(243, 218, 119, .6);
+  }
+  99% {
+    text-shadow: .4vh  .4vh 4vh rgba(243, 218, 119, .6),
+                -.4vh -.4vh 4vh rgba(243, 218, 119, .6);
+  }
+}
