@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Abel|Kanit|Libre+Franklin|Philosopher|Rajdhani');
 
+body, #root, main {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: rgb(0, 15, 25);
   font-family: 'Abel';
-}
-
-
-main {
-  width: 70%;
-  margin: 0 auto;
 }
 
 h1 {
