@@ -13,9 +13,9 @@ export const Profile = props => {
       </header>
       
       <div className="description">
-        <p> <span className="heart">❤</span> code </p>
-        <p> <span className="heart">❤</span> music </p>
-        <p> <span className="heart">❤</span> education </p>
+        <p className="passion"> <span className="heart">❤</span> code </p>
+        <p className="passion"> <span className="heart">❤</span> music </p>
+        <p className="passion"> <span className="heart">❤</span> education </p>
       </div>
     </div>
   )
