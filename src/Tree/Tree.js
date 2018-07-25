@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const Tree = props => {
+export const Tree = ({size, x, y}) => {
   return (
 
     <svg 
-        width={props.size}
-        height={props.size}
-        x={props.x}
-        y={props.y}
+        width={size}
+        height={size}
+        x={x}
+        y={y}
         viewBox={"0 0 500 500"}
         version="1.1" xmlns="http://www.w3.org/2000/svg" 
         xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -7,9 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <main>
-        <Forest>
-          <Tree x={123} y={34} size={100}/>
-        </Forest>
+        <Forest/>
         <Profile />
       </main>
     )
