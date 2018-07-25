@@ -1,11 +1,13 @@
 import React from 'react'
 import './Profile.css'
+import { Moon } from '../Moon/Moon'
 
 export const Profile = props => {
   return (
     <div className="profile">
       <header>
-        <span className="moon">☾</span>
+
+        <Moon size={128}/>
         <h1>
           James
       </h1>

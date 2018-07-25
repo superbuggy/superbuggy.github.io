@@ -15,7 +15,7 @@ export const Forest = props => {
       const SPACE_BETWEEN_TREES = window.innerWidth / TREES_PER_ROW
       const CENTERING_OFFSET = -Math.round(VARIANCE / 2)
       const initalX = index * SPACE_BETWEEN_TREES + rowNumber * VARIANCE + CENTERING_OFFSET
-      const darkness = .6 * (ROWS - rowNumber)  / ROWS + .3
+      const darkness = .6 * (ROWS - rowNumber) / ROWS + .3
       return (
         <Tree
           key={index}
@@ -42,9 +42,7 @@ export const Forest = props => {
     <svg
       viewBox={`0 0 ${window.innerWidth} ${window.innerHeight}`}
     >
-      {/* <g> */}
       {trees}
-      {/* </g> */}
     </svg>
   )
 }
