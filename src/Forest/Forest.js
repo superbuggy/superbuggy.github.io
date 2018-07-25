@@ -15,12 +15,14 @@ export const Forest = props => {
       const SPACE_BETWEEN_TREES = window.innerWidth / TREES_PER_ROW
       const CENTERING_OFFSET = -Math.round(VARIANCE / 2)
       const initalX = index * SPACE_BETWEEN_TREES + rowNumber * VARIANCE + CENTERING_OFFSET
+      const darkness = .6 * (ROWS - rowNumber)  / ROWS + .3
       return (
-        <Tree 
+        <Tree
           key={index}
           x={initalX + random(-CHAOS, CHAOS)}
           y={y + random(-CHAOS, CHAOS*2)}
           size={TREE_SIZE}
+          darkness={darkness}
         />
       )
     })
