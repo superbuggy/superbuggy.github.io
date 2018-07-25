@@ -7,8 +7,8 @@ export const Forest = props => {
   const TREE_SPACING_MODIFIER = .66
   const VARIANCE = Math.round(TREE_SIZE - TREE_SIZE * TREE_SPACING_MODIFIER)
   const CHAOS = VARIANCE * 0.8
-  const TREES_PER_ROW = Math.round(window.innerWidth / (TREE_SIZE * TREE_SPACING_MODIFIER))
-  const ROWS = Math.round(window.innerHeight / (TREE_SIZE * TREE_SPACING_MODIFIER))
+  const TREES_PER_ROW = Math.round(window.innerWidth / (TREE_SIZE * TREE_SPACING_MODIFIER / 1.1))
+  const ROWS = Math.round(window.innerHeight / (TREE_SIZE * TREE_SPACING_MODIFIER / 1.5))
   
   function rowOfTrees (treesPerRow, y, rowNumber) {
     console.log(treesPerRow, ROWS, TREES_PER_ROW)
@@ -20,7 +20,7 @@ export const Forest = props => {
       return (
         <Tree
           key={index}
-          x={initalX + random(-CHAOS, CHAOS)}
+          x={initalX + random(-CHAOS, CHAOS) - random(40, 40 + CENTERING_OFFSET)}
           y={y + random(-CHAOS, CHAOS*2)}
           size={TREE_SIZE}
           darkness={darkness}
