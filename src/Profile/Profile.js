@@ -6,7 +6,6 @@ export const Profile = props => {
   return (
     <div className="profile">
       <header>
-
         <Moon size={128}/>
         <h1>
           James

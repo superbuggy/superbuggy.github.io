@@ -13,14 +13,6 @@
   color: rgb(255, 216, 58);
 }
 
-.moon {
-  text-align: center;
-  font-size: 128px;
-  letter-spacing: .25em;
-  color: rgb(255, 216, 58);
-  animation: 7.7s ease-in-out infinite moon-glow;
-}
-
 h1 {
   max-width: 100vw;
   min-width: 100vw;
@@ -69,20 +61,3 @@ h1 {
                   0em  0em 3em rgba(243, 218, 119, 0.3);
   }
 }
-
-
-@keyframes moon-glow {
-  0% {
-    text-shadow: .1em  .1em 1em rgba(243, 218, 119, .6),
-                -.1em -.1em 1em rgba(243, 218, 119, .6);
-  }
-  50% {
-    text-shadow: .1em  .1em 8em rgba(243, 218, 119, .6),
-                -.1em -.1em 8em rgba(243, 218, 119, .6);
-  }
-  99% {
-    text-shadow: .1em  .1em 1em rgba(243, 218, 119, .6),
-                -.1em -.1em 1em rgba(243, 218, 119, .6);
-  }
-}
-
