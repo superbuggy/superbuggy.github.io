@@ -6,19 +6,19 @@ export default class App extends Component {
   render() {
     return (
       <main>
-        <Tree />
+        <Tree size={100}/>
         <header>
-          <span class="moon">☾</span>
+          <span className="moon">☾</span>
           <h1>
             James
         </h1>
           <h1>Reichard</h1>
         </header>
         
-        <div class="description">
-          <p> <span data-passion="code" class="heart">❤</span> code </p>
-          <p> <span data-passion="music" class="heart">❤</span> music </p>
-          <p> <span data-passion="education" class="heart">❤</span> education </p>
+        <div className="description">
+          <p> <span className="heart">❤</span> code </p>
+          <p> <span className="heart">❤</span> music </p>
+          <p> <span className="heart">❤</span> education </p>
         </div>
       </main>
     )
