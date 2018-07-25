@@ -11,7 +11,6 @@ export const Forest = props => {
   const ROWS = Math.round(window.innerHeight / (TREE_SIZE * TREE_SPACING_MODIFIER / 1.5))
   
   function rowOfTrees (treesPerRow, y, rowNumber) {
-    console.log(treesPerRow, ROWS, TREES_PER_ROW)
     return [...Array(treesPerRow).keys()].map(index => {
       const SPACE_BETWEEN_TREES = window.innerWidth / TREES_PER_ROW
       const CENTERING_OFFSET = -Math.round(VARIANCE / 2)
@@ -23,7 +22,7 @@ export const Forest = props => {
           x={initalX + random(-CHAOS, CHAOS) - random(40, 40 + CENTERING_OFFSET)}
           y={y + random(-CHAOS, CHAOS*2)}
           size={TREE_SIZE}
-          darkness={darkness}
+          darkness={darkness + random(-2, 2) / 10}
         />
       )
     })
