@@ -1,11 +1,12 @@
 import React from 'react'
 import { Tree } from '../Tree/Tree'
+import { random } from '../utils'
 
 export const Forest = props => {
   const TREE_SIZE = 100
   const TREE_SPACING_MODIFIER = .66
   const VARIANCE = Math.round(TREE_SIZE - TREE_SIZE * TREE_SPACING_MODIFIER)
-  
+  const CHAOS = VARIANCE * 0.8
   const TREES_PER_ROW = Math.round(window.innerWidth / (TREE_SIZE * TREE_SPACING_MODIFIER))
   const ROWS = Math.round(window.innerHeight / (TREE_SIZE * TREE_SPACING_MODIFIER))
   
@@ -13,11 +14,12 @@ export const Forest = props => {
     return [...Array(treesPerRow).keys()].map(index => {
       const SPACE_BETWEEN_TREES = window.innerWidth / TREES_PER_ROW
       const CENTERING_OFFSET = -Math.round(VARIANCE / 2)
+      const initalX = index * SPACE_BETWEEN_TREES + rowNumber * VARIANCE + CENTERING_OFFSET
       return (
         <Tree 
           key={index}
-          x={index * SPACE_BETWEEN_TREES + rowNumber * VARIANCE + CENTERING_OFFSET}
-          y={y}
+          x={initalX + random(-CHAOS, CHAOS)}
+          y={y + random(-CHAOS, CHAOS*2)}
           size={TREE_SIZE}
         />
       )
