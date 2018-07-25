@@ -11,11 +11,12 @@ export const Forest = props => {
   const ROWS = Math.round(window.innerHeight / (TREE_SIZE * TREE_SPACING_MODIFIER))
   
   function rowOfTrees (treesPerRow, y, rowNumber) {
+    console.log(treesPerRow, ROWS, TREES_PER_ROW)
     return [...Array(treesPerRow).keys()].map(index => {
       const SPACE_BETWEEN_TREES = window.innerWidth / TREES_PER_ROW
       const CENTERING_OFFSET = -Math.round(VARIANCE / 2)
       const initalX = index * SPACE_BETWEEN_TREES + rowNumber * VARIANCE + CENTERING_OFFSET
-      const darkness = .6 * (ROWS - rowNumber) / ROWS + .3
+      const darkness = .5 * (ROWS - rowNumber) / ROWS + .3
       return (
         <Tree
           key={index}
@@ -32,7 +33,9 @@ export const Forest = props => {
   function forest (rows) {
     const SPACE_BETWEEN_ROWS = window.innerHeight / rows
     return [...Array(rows).keys()].map(index => {
-      return rowOfTrees(TREES_PER_ROW - index, index * SPACE_BETWEEN_ROWS, index)
+      if (TREES_PER_ROW - index >= 0) { // More rows than trees per row in portrait
+        return rowOfTrees(TREES_PER_ROW - index, index * SPACE_BETWEEN_ROWS, index)
+      }
     })
   }
   
