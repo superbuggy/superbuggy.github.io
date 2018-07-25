@@ -3,7 +3,7 @@ import React from 'react'
 export const Tree = props => {
   return (
 
-    <svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink">
+    <svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 
       <title>Tree!</title>
       <desc>Created with Sketch.</desc>
