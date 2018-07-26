@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Tree } from '../Tree/Tree'
 import { Forest } from '../Forest/Forest'
 import { Profile } from '../Profile/Profile'
 

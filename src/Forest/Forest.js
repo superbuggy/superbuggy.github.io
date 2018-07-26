@@ -37,9 +37,7 @@ export const Forest = props => {
 
   const trees = forest(ROWS)
   return (
-    <svg
-      viewBox={`0 0 ${window.innerWidth} ${window.innerHeight}`}
-    >
+    <svg viewBox={`0 0 ${window.innerWidth} ${window.innerHeight}`}>
       {trees}
     </svg>
   )

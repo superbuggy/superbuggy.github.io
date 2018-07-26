@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@font-face {
+  font-family: 'Rajdhani Regular';
+  src: url(../fonts/Rajdhani-Regular.ttf) format('opentype');
+}
 
 .profile {
   position: absolute;
@@ -18,7 +21,7 @@ h1 {
   min-width: 100vw;
   font-size: 8vmax;
   animation: expand-shadow 8s ease-in-out infinite;
-  font-family: 'Rajdhani';
+  font-family: 'Rajdhani Regular';
   letter-spacing: .25vw;
   color: rgb(255, 230, 130);
   -webkit-font-smoothing: antialiased;
