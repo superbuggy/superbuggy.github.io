@@ -23,6 +23,13 @@ h1 {
   font-family: 'Rajdhani Regular';
   letter-spacing: .25vw;
   color: rgb(255, 230, 130);
+  text-shadow: .1vh .1vh 0px rgb(243, 218, 119),
+               .3vh .3vh 0px rgb(199, 173, 69),
+               .5vh .5vh 0px rgb(179, 153, 54),
+               .7vh .7vh 0px rgb(104, 81, 41),
+                0vh  0vh 3vh rgb(24, 50, 63),
+                0vh  0vh 4vh rgb(24, 58, 75),
+                0vh  0vh 6vh rgba(243, 218, 119, 0.3);
   -webkit-font-smoothing: antialiased;
 }
 
