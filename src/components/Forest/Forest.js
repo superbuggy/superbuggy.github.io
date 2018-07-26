@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tree } from '../Tree/Tree'
-import { random } from '../utils'
+import { random } from '../../utils'
 
 export const Forest = props => {
   const TREE_SIZE = 100
