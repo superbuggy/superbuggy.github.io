@@ -4,10 +4,10 @@ import { Forest } from '../Forest/Forest'
 import { Profile } from '../Profile/Profile'
 
 export default class App extends Component {
-  render() {
+  render () {
     return (
       <main>
-        <Forest/>
+        <Forest />
         <Profile />
       </main>
     )
