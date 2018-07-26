@@ -28,16 +28,12 @@ export const Forest = props => {
     })
   }
 
-
   function forest (rows) {
     const SPACE_BETWEEN_ROWS = window.innerHeight / rows
     return [...Array(rows).keys()].map(index => {
-      if (TREES_PER_ROW - index >= 0) { // More rows than trees per row in portrait
-        return rowOfTrees(TREES_PER_ROW - index, index * SPACE_BETWEEN_ROWS, index)
-      }
+      return rowOfTrees(Math.abs(TREES_PER_ROW - index), index * SPACE_BETWEEN_ROWS, index)
     })
   }
-
 
   const trees = forest(ROWS)
   return (
