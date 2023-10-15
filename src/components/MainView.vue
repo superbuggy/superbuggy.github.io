@@ -11,10 +11,10 @@ import ProjectListItem from "./ProjectListItem.vue";
   <div>
     <aside>
       <ProjectList>
-        <ProjectListItem text="About" />
-        <ProjectListItem text="Resumé" />
-        <ProjectListItem text="Projects" />
-        <ProjectListItem text="Thoughts" />
+        <ProjectListItem :isFirst="true" >About</ProjectListItem>
+        <ProjectListItem>Resumé</ProjectListItem>
+        <ProjectListItem>Projects</ProjectListItem>
+        <ProjectListItem :isLast="true">Thoughts</ProjectListItem>
       </ProjectList>
       <!-- <ul>
         <li>projects</li>
@@ -44,7 +44,6 @@ main {
 aside {
   min-height: 100vh;
   max-height: 100vh;
-  /* grid-row: 1 / 3; */
   margin: 0;
   padding-top: 7rem;
   grid-column: 1 / 2;
@@ -52,14 +51,4 @@ aside {
   background-color: var(--heavy-metal);
 }
 
-/* li:before {
-  display: inline-block;
-  content: '';
-  background-image: url(../assets/icons/git-commit.svg);
-  background-repeat:no-repeat;
-  background-size: 1.5rem 1.5rem;
-  fill: var(--secondary);
-  width: 1.5rem;
-  height: 1.5rem;
-} */
 </style>
