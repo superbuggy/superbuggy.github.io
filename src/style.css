@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Syne+Mono&display=swap');
+
+:root {
+  /*  */
+  --finlandia: #5d695d;
+  --locust: #a1ac80;
+  --highland: #748c69;
+  --blue-bayoux: #495c6f;
+  --shark: #1e2124;
+  /*  */
+  --mineral-green: #3c5d49;
+  --xanadu: #6c7f6e;
+  --bud: #a6b3a2;
+  --pine-glade: #c8c997;
+  --potters-clay: #7d5e36;
+  /*  */
+  --heavy-metal: #2d3930;
+  --siam: #59634f;
+  --granite-green: #8e8c7b;
+  --mongoose: #b8ad7a;
+  --zombie: #d8de8c;
+  /*  */
+  --primary: var(--shark);
+  --secondary: var(--locust);
+  --accent: var(--pine-glade);
+  --accent-secondary: var(--zombie);
+  --accent-tertiary: var(--heavy-metal);
+
+  --bright-lichen: #81ffb4;
+
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-family: 'Anonymous Pro', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary);
+  display: inline-block;
+  font-family: 'Syne Mono', Helvetica, sans-serif;
+}
+
+.gradient{
+  background: -webkit-linear-gradient(105deg, var(--zombie), var(--bright-lichen));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
