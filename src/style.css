@@ -5,6 +5,9 @@
   --finlandia: #5d695d;
   --locust: #a1ac80;
   --highland: #748c69;
+  --light-highland: #b9dec8;
+  --lighter-blue-bayoux: #b0d0f2;
+  --light-blue-bayoux: #9eb3c9;
   --blue-bayoux: #495c6f;
   --shark: #1e2124;
   /*  */
@@ -19,6 +22,7 @@
   --granite-green: #8e8c7b;
   --mongoose: #b8ad7a;
   --zombie: #d8de8c;
+  --mellow-zombie: #d9dcb2;
   /*  */
   --primary: var(--shark);
   --secondary: var(--locust);
@@ -29,8 +33,14 @@
   --bright-lichen: #81ffb4;
 
 }
+html,#app { height: 100vh; }
+
+#app {
+  overflow-y: hidden;
+}
 
 body {
+  min-height: 100vh; 
   background-color: var(--primary);
   color: var(--secondary);
   font-family: 'Anonymous Pro', monospace;
@@ -45,11 +55,11 @@ h4,
 h5,
 h6 {
   color: var(--secondary);
-  display: inline-block;
   font-family: 'Syne Mono', Helvetica, sans-serif;
 }
 
-.gradient{
+.gradient {
+  display: inline-block;
   background: -webkit-linear-gradient(105deg, var(--zombie), var(--bright-lichen));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import {RouterLink} from 'vue-router'
+
 interface Props {
-  text: string;
+  path: string,
   isFirst: boolean;
   isLast: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  text: "",
+  path: '/',
   isFirst: false,
   isLast: false,
 });
@@ -18,10 +20,9 @@ import CommitIcon from "./icons/CommitIcon.vue";
 <template>
   <li>
     <CommitIcon :isFirst="isFirst" :isLast="isLast" />
-    <!-- {{ props.text }} -->
-    <a href="">
+    <router-link :to="path">
       <slot></slot>
-    </a>
+    </router-link>
   </li>
 </template>
 
@@ -32,6 +33,11 @@ li {
   padding-left: 2rem;
   margin: 0;
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 svg {
