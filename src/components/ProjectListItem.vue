@@ -38,6 +38,7 @@ li {
 li a {
   text-decoration: none;
   color: inherit;
+  vertical-align: middle;
 }
 
 svg {
@@ -51,7 +52,13 @@ li:hover svg {
   stroke: var(--zombie);
 }
 li:hover {
-  background-color: var(--xanadu);
-  color: var(--zombie);
+ background-color: var(--xanadu);
+}
+li:hover a {
+  /* background-color: var(--xanadu);
+  color: var(--zombie); */
+  background: -webkit-linear-gradient(105deg, var(--zombie), var(--bright-lichen));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
