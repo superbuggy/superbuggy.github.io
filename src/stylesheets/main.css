@@ -57,10 +57,3 @@ h6 {
   color: var(--secondary);
   font-family: 'Syne Mono', Helvetica, sans-serif;
 }
-
-.gradient {
-  display: inline-block;
-  background: -webkit-linear-gradient(105deg, var(--zombie), var(--bright-lichen));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

@@ -1,0 +1,12 @@
+$gradient-colors: -webkit-linear-gradient(105deg, var(--zombie), var(--bright-lichen));
+
+@mixin gradient {
+  display: inline-block;
+  background: $gradient-colors;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient {
+  @include gradient;
+}
