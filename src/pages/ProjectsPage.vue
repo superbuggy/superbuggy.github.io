@@ -8,7 +8,7 @@
     <p>
       An algorithm adapted from Euclid that times the firing of neutrons in a particle
       accelerator also generates (describes) rhythms of musical traditions found in
-      various cultures around the world. Uses ToneJS, vanilla JavaScript.
+      various cultures around the world. Uses ToneJS and vanilla JavaScript.
     </p>
   </section>
   <section>
@@ -24,11 +24,20 @@
       <a target="_blank" href="https://superbuggy.github.io/react-game-of-life">
         Game of Life Microtonal Lattice
       </a>
-      <p>
-        Conway's Game of Life cellular automata model adapted for a 5-limit
-        Just-Intonation lattice. Uses ToneJS, React.
-      </p>
     </h2>
+    <p>
+      Conway's Game of Life cellular automata model adapted for a 5-limit Just-Intonation
+      lattice. Uses TypeScript, ToneJS, and React.
+    </p>
+  </section>
+  <section>
+    <h2>
+      <a target="_blank" href="https://superbuggy.github.io/microtab"> Microtonal Guitar Tool </a>
+    </h2>
+    <p>
+      A xenharmonic scale visualizer for microtonal and fretless guitars. Uses TypeScript,
+      Vue3, and ToneJS.
+    </p>
   </section>
 </template>
 <style lang="scss" scoped>
@@ -36,13 +45,27 @@ h2 {
   @import "../stylesheets/main.scss";
   @include gradient;
   margin-top: 0;
-  border-bottom: 1px solid;
+  margin-bottom: 0.75rem;
+  // margin-bottom: 0;
+  border-bottom: 1px solid transparent;
+  // padding-top: 1px;
+  &:hover {
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(105deg, var(--zombie), var(--bright-lichen));
+    // padding-top: 0px;
+  }
+}
+
+p {
+  // padding-top: .5rem;
+  padding-left: 0.75rem;
+  border-left: 4px dotted;
   border-image-slice: 1;
   border-image-source: linear-gradient(105deg, var(--zombie), var(--bright-lichen));
-  padding-top: 1px;
-  &:hover {
-    border-bottom: 2px solid;
-    padding-top: 0px;
-  }
+}
+
+section {
+  margin-bottom: 2rem;
 }
 </style>
